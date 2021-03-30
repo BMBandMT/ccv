@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+body {
+  margin: 0px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 17.5px;
+}
+a {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+footer {
+  background-color: #000000;
+  padding: 60px 0px 20px 0px;
+  color: #707070;
+}
+.hidden {
+  display: none;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#___gatsby {
+  height: 100%;
+}
+#___gatsby > div {
+  height: 100%;
+}
+#oppthanks > div {
+  height: 100%;
+}
+#oppthanks main {
+  height: 100%;
+}
+#oppthanks main > div {
+  height: 100%;
+}
+#oppthanks {
+  height: 100%;
+}
+#oppthanks header {
+  display: none;
+}
+#oppthanks footer {
+  display: none;
+}
