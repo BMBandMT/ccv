@@ -199,7 +199,7 @@ class Weed extends Component {
             <h2>Secure a stake in global cannabis growth. Invest in a historic luxury product.</h2>
             <p>Contact our investment to get started.</p>
             <div className="middle-link">
-              <AnchorLink href="#lpfooter">Envest Now</AnchorLink>
+              <AnchorLink href="#lpfooter">Invest Now</AnchorLink>
             </div>
           </Container>
         </BackgroundImage>
