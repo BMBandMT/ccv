@@ -12,13 +12,6 @@ const LpfooterStyle = styled.div`
     padding: 100px 0px 60px 0px;
     @media (max-width: ${variable.mobileWidth}) {
       padding: 45px 0px 45px 0px;
-      background-image: none !important;
-      &:before {
-        background-image: none !important;
-      }
-      &:after {
-        background-image: none !important;
-      }
     }
     h2 {
       color: #000000;
@@ -32,6 +25,7 @@ const LpfooterStyle = styled.div`
       @media (max-width: ${variable.mobileWidth}) {
         font-size: 23px;
         line-height: 23px;
+        font-weight: 400;
       }
     }
     .centergrow-initial {
@@ -367,15 +361,17 @@ const LpfooterStyle = styled.div`
     .mobile-form-footer {
       display: block !important;
       box-shadow: #00000046 0px 3px 6px;
-      padding: 10px 10px 30px 10px;
+      padding: 20px 10px 30px 10px;
       display: flex;
       flex-direction: column;
       margin-top: 40px;
+      background-color: white;
       h4 {
         width: 100%;
         text-align: center;
         margin: 0px 0px 20px 0px;
       }
+
       .form-row {
         margin-bottom: 5px;
         input {
@@ -480,9 +476,15 @@ const LpFooter = () => {
           <div className="form-copy">
             <h2>A unique opportunity for accredited investors.</h2>
             <p>
-              Secure a stake in cannabis production just as the global market turns to Jamaica for supply solutions. Invest in the island’s historic luxury product.
+              Secure a stake in cannabis production just as the global market
+              turns to Jamaica for supply solutions. Invest in the island’s
+              historic luxury product.
             </p>
-            <p>If you’re an accredited investor and interested in learning more about investing in our companies, fill out the form below and our team will reach out to you shortly.</p>
+            <p>
+              If you’re an accredited investor and interested in learning more
+              about investing in our companies, fill out the form below and our
+              team will reach out to you shortly.
+            </p>
           </div>
           <form
             name="contact"

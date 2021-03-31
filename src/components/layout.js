@@ -66,11 +66,8 @@ const Layout = ({ children }) => {
           <Container>
             <div className="footer-inner">
               <div>
-                &copy;{" "}
-                {new Date().getFullYear()} Coffee Cannabis Ventures | All Rights Reserved
-              </div>
-              <div>
-                <Link to="/confidentiality-policy">Confidentiality Policy</Link>
+                &copy; {new Date().getFullYear()} Coffee Cannabis Ventures | All
+                Rights Reserved
               </div>
             </div>
           </Container>

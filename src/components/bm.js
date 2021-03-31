@@ -10,10 +10,20 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 const WeedStyle = styled.div`
   .weed-top {
     padding: 115px 0px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      padding: 50px 0px;
+    }
   }
   .weed-image {
     display: flex;
     justify-content: center;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      padding: 10px 0px;
+      .gatsby-image-wrapper {
+        width: 158px !important;
+        height: 86px !important;
+      }
+    }
   }
   .weed-title {
     max-width: 650px;
@@ -23,6 +33,10 @@ const WeedStyle = styled.div`
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      font-size: 19px;
+      line-height: 25px;
+    }
   }
   .weed-2021 {
     margin-top: 20px;
@@ -30,50 +44,85 @@ const WeedStyle = styled.div`
       font-size: 18px;
       line-height: 24px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .weed-gram-container {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 100px auto 0px auto;
+    margin: 80px auto 0px auto;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin: 60px auto 0px auto;
+      flex-direction: column;
+    }
     .weed-lb {
       width: 50%;
       max-width: 415px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 100%;
+      }
     }
     .weed-gram {
       width: 50%;
       max-width: 415px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 100%;
+        margin-top: 40px;
+      }
     }
     h3 {
       font-size: 24px;
       margin: 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 19px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
       margin: 10px 0px 0px 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .weed-million {
     text-align: center;
     max-width: 900px;
     margin: 60px auto 0px auto;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin: 40px auto 0px auto;
+    }
     h3 {
       font-size: 24px;
       margin: 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 19px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
       margin: 10px 0px 0px 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .mt-mobile-logos {
-    margin-top: 100px;
+    margin-top: 80px;
     opacity: 0.5;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin-top: 60px;
+    }
     > div {
       display: flex;
       flex-wrap: wrap;
@@ -86,16 +135,26 @@ const WeedStyle = styled.div`
     }
   }
   .mt-mobile-jamaican {
-    margin: 100px auto 0px auto;
+    margin: 80px auto 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 850px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin-top: 60px;
+    }
     .gatsby-image-wrapper {
       width: 238px;
       opacity: 0.75;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 100px !important;
+        img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
     }
     .mt-mobile-jamailcan-copy {
       width: calc(100% - 275px);
@@ -103,6 +162,12 @@ const WeedStyle = styled.div`
       padding-left: 45px;
       font-size: 18px;
       line-height: 24px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: calc(100% - 120px);
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 19px;
+      }
     }
   }
   #middle {

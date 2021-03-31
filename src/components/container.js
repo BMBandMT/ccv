@@ -12,6 +12,10 @@ const Container = styled.div`
     max-width: ${variable.mobileWidth};
     padding: 0px 15px;
   }
+  @media (max-width: ${variable.mobileWidthSmall}) {
+    max-width: 380px;
+    padding: 0px 15px;
+  }
 `
 
 export default Container

@@ -9,11 +9,20 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const WeedStyle = styled.div`
   .weed-top {
-    padding: 115px 0px;
+    padding: 115px 20px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      padding: 60px 20px;
+    }
   }
   .weed-image {
     display: flex;
     justify-content: center;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      .gatsby-image-wrapper {
+        width: 125px !important;
+        height: 106px !important;
+      }
+    }
   }
   .weed-title {
     max-width: 650px;
@@ -23,6 +32,20 @@ const WeedStyle = styled.div`
     font-weight: bold;
     text-align: center;
     margin-top: 10px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      display: none;
+    }
+  }
+  .mobile-weed-title {
+    display: none;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      display: block;
+      font-size: 19px;
+      line-height: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0px;
+    }
   }
   .weed-2021 {
     margin-top: 20px;
@@ -30,31 +53,59 @@ const WeedStyle = styled.div`
       font-size: 18px;
       line-height: 24px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+      :nth-child(2) {
+        @media (max-width: ${variable.mobileWidthSmall}) {
+          display: none;
+        }
+      }
     }
   }
   .weed-gram-container {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
-    margin: 100px auto 0px auto;
+    margin: 80px auto 0px auto;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      flex-direction: column;
+      margin: 60px auto 0px auto;
+    }
     .weed-lb {
       width: 50%;
       max-width: 415px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 100%;
+      }
     }
     .weed-gram {
       width: 50%;
       max-width: 415px;
       text-align: center;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 100%;
+        margin-top: 60px;
+      }
     }
     h3 {
       font-size: 24px;
       margin: 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 19px;
+        line-height: 25px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
       margin: 10px 0px 0px 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .weed-million {
@@ -64,16 +115,27 @@ const WeedStyle = styled.div`
     h3 {
       font-size: 24px;
       margin: 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 19px;
+        line-height: 25px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
       margin: 10px 0px 0px 0px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .mt-mobile-logos {
-    margin-top: 100px;
+    margin-top: 80px;
     opacity: 0.5;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin-top: 60px;
+    }
     > div {
       display: flex;
       flex-wrap: wrap;
@@ -83,19 +145,66 @@ const WeedStyle = styled.div`
       > div {
         margin: 5px 15px;
       }
+      &:nth-child(1) {
+        > div {
+          &:nth-child(1) {
+            width: 80px !important;
+            img {
+              width: 100%;
+              height: auto !important;
+            }
+          }
+          &:nth-child(2) {
+            width: 100px !important;
+            img {
+              width: 100%;
+              height: auto !important;
+            }
+          }
+        }
+      }
+      &:nth-child(2) {
+        > div {
+          &:nth-child(1) {
+            width: 120px !important;
+            img {
+              width: 100%;
+              height: auto !important;
+            }
+          }
+          &:nth-child(2) {
+            width: 120px !important;
+            img {
+              width: 100%;
+              height: auto !important;
+            }
+          }
+        }
+      }
     }
   }
   .mt-mobile-jamaican {
-    margin: 100px auto 0px auto;
+    margin: 80px auto 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 850px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin-top: 60px;
+    }
     .gatsby-image-wrapper {
       width: 238px;
       opacity: 0.75;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: 75px !important;
+        height: 35px !important;
+        img {
+          width: 100%;
+          height: auto !important;
+        }
+      }
     }
     .mt-mobile-jamailcan-copy {
       width: calc(100% - 275px);
@@ -103,19 +212,43 @@ const WeedStyle = styled.div`
       padding-left: 45px;
       font-size: 18px;
       line-height: 24px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        width: calc(100% - 100px);
+        font-size: 14px;
+        line-height: 19px;
+        padding-left: 20px;
+      }
     }
   }
   #middle {
     color: white;
     text-align: center;
     padding: 100px 0px;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      padding: 75px 0px;
+    }
     h2 {
       font-size: 24px;
       line-height: 32px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        display: none;
+      }
+    }
+    h2.mobile-h2 {
+      display: none;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        display: block;
+        font-size: 19px;
+        line-height: 25px;
+      }
     }
     p {
       font-size: 18px;
       line-height: 24px;
+      @media (max-width: ${variable.mobileWidthSmall}) {
+        font-size: 19px;
+        line-height: 25px;
+      }
     }
     .middle-link {
       display: flex;
@@ -151,6 +284,9 @@ class Weed extends Component {
           <div className="weed-title">
             Jamaica is positioned to supply the global cannabis market, solving
             high supply chain costs globally.
+          </div>
+          <div className="mobile-weed-title">
+            Jamaica is positioned to supply the global cannabis market.
           </div>
           <div className="weed-2021">
             <p>
