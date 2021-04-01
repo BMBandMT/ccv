@@ -156,6 +156,7 @@ const HeroStyle = styled.div`
       text-align: center;
       margin: 0 auto;
       font-weight: 400;
+      display:block !important;
     }
     #hero {
       > div {

@@ -87,7 +87,7 @@ const WeedStyle = styled.div`
       text-align: center;
       @media (max-width: ${variable.mobileWidthSmall}) {
         width: 100%;
-        margin-top: 60px;
+        margin-top: 40px;
       }
     }
     h3 {
@@ -112,6 +112,10 @@ const WeedStyle = styled.div`
     text-align: center;
     max-width: 900px;
     margin: 60px auto 0px auto;
+    @media (max-width: ${variable.mobileWidthSmall}) {
+      margin: 40px auto 0px auto;
+
+    }
     h3 {
       font-size: 24px;
       margin: 0px;
@@ -361,7 +365,7 @@ class Weed extends Component {
               Secure a stake in global cannabis growth. Invest in a historic
               luxury product.
             </h2>
-            <p>Contact our investment to get started.</p>
+            <p>Contact our investment team to get started.</p>
             <div className="middle-link">
               <AnchorLink href="#lpfooter">Invest Now</AnchorLink>
             </div>
