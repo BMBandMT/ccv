@@ -11,7 +11,7 @@ const WeedStyle = styled.div`
   .weed-top {
     padding: 115px 0px;
     @media (max-width: ${variable.mobileWidthSmall}) {
-      padding: 50px 0px;
+      padding: 50px 20px;
     }
   }
   .weed-image {
