@@ -55,7 +55,7 @@ const WeedStyle = styled.div`
       text-align: center;
       @media (max-width: ${variable.mobileWidthSmall}) {
         font-size: 15px;
-        line-height: 25px;
+        line-height: 20px;
       }
       :nth-child(2) {
         @media (max-width: ${variable.mobileWidthSmall}) {
@@ -114,7 +114,6 @@ const WeedStyle = styled.div`
     margin: 60px auto 0px auto;
     @media (max-width: ${variable.mobileWidthSmall}) {
       margin: 40px auto 0px auto;
-
     }
     h3 {
       font-size: 24px;
@@ -252,6 +251,7 @@ const WeedStyle = styled.div`
       @media (max-width: ${variable.mobileWidthSmall}) {
         font-size: 19px;
         line-height: 25px;
+        font-weight: 500;
       }
     }
     .middle-link {
