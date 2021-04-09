@@ -452,15 +452,15 @@ const LpfooterStyle = styled.div`
       }
     }
   }
-  .mobile-form-copy{
-    display:none;
+  .mobile-form-copy {
+    display: none;
   }
   @media (max-width: ${variable.mobileWidthSmall}) {
-    .mobile-form-copy{
-      display:block;
+    .mobile-form-copy {
+      display: block;
     }
-    .desktop-form-copy{
-      display:none;
+    .desktop-form-copy {
+      display: none;
     }
   }
 `
@@ -491,20 +491,22 @@ const LpFooter = () => {
                 Secure a stake in cannabis production just as the global market
                 turns to Jamaica for supply solutions. Invest in the island’s
                 historic luxury product.
-            </p>
+              </p>
               <p>
                 If you’re an accredited investor and interested in learning more
-                about investing in our companies, fill out the form below and our
-                team will reach out to you shortly.
-            </p>
+                about investing in our companies, fill out the form below and
+                our team will reach out to you shortly.
+              </p>
             </div>
             <div className="mobile-form-copy">
               <p>
-                Secure a stake in global cannabis growth. Invest in a historic luxury product.
-            </p>
+                Secure a stake in global cannabis growth. Invest in a historic
+                luxury product.
+              </p>
               <p>
-                If you’re an accredited investor, fill out the form below and our team will reach out to you shortly.
-            </p>
+                If you’re an accredited investor, fill out the form below and
+                our team will reach out to you shortly.
+              </p>
             </div>
           </div>
           <form
@@ -602,6 +604,13 @@ const LpFooter = () => {
                   <input type="radio" value="evening" name="times" />
                   <div>Evening</div>
                 </div>
+              </div>
+            </div>
+            <div className="form-row form-row-certify">
+              <label></label>
+              <div className="form-row-inputs form-row-inputs-certify">
+                <input type="checkbox" id="certify" name="certify" required />{" "}
+                *I certify that I am an accredited investor.
               </div>
             </div>
             <div className="form-row">
